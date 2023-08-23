@@ -1,5 +1,6 @@
 /* Estilos generales para el cuerpo de la página */
 body {
+    font: arial; /* Aqui cambien la fuente */
     margin: 0;
     padding: 0;
     display: inline;
@@ -33,11 +34,12 @@ body {
 .titulo-con-fondo img{
     max-width: 100px;
     padding-right: 100px;
+    padding-left: 2% ;
 }
 /* Estilos para el título */
 h1 {
     position: -ms-page;
-    padding-right: 100px;
+    padding-right: 15%;
     color: #fff; /* Cambiar este color según tus preferencias */
     text-align: center;
     margin: 0;
