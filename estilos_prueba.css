@@ -177,10 +177,69 @@ h1 {
     color: #fff; /* Cambiar este color según tus preferencias */
     text-decoration: none;
 }
+/* Estilos para la lista desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5e5c5c;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.cascada{
+    background-color: #333;
+}
+.cascadina{
+    color: #000;
+}
+.dropdown-content ul {
+    display: contents;
+    justify-content: center;
+
+}
+.dropdown li{
+color: #fffefece; /* Cambiar este color según tus preferencias */
+    text-decoration: none;
+    font-size: 20px;}
+.dropdown-content li {
+    margin: 10px 20px; /* Distancia entre los elementos del menú */
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 2px;
+}
+
+.dropdown-content li::after {
+    content: none;
+    position: absolute;
+    right: 0; /* Distancia de la línea respecto al elemento del menú */
+    top: 50%;
+    transform: translateY(-70%);
+    width: 0px;
+    height: 34px; /* Largo de la línea */
+    background-color: #ccc; /* Color de la línea separadora */
+}
+.dropdown button {
+    background-color: transparent; /* Establece el fondo como transparente */
+    border: 0px solid #ccc; /* Añade un borde para que sea visible */
+}
 
 
-
-
-
-
-
+.dropdown button:hover {
+    background: #000000;
+    border-radius: 5px;
+}
